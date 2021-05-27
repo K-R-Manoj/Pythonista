@@ -1,0 +1,6 @@
+			
+			
+	This is very simple Python project of Rock Paper Scissor
+
+
+	Play and enjoy

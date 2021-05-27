@@ -1,17 +1,22 @@
 import random
 
 def Rock_Paper_Scissors():
-    user = input("enter your choice :  ")
+    print(" Rock : r \n Paper : p \n Scissor : s")
+    user = input("Enter your choice :  ")
     computer = random.choice(['r','p','s'])
 
-    if user == computer:
-    
-        print('it is draw')
-    
-    elif Win(user,computer):
-        print("YOU WIN")
+    if user == 'r' or user == 'p' or user == 's':
+
+        if user == computer:
+        
+            print('It IS DRAW')
+        
+        elif Win(user,computer):
+            print("YOU WIN")
+        else:
+            print("YOU LOST")
     else:
-        print("YOU LOST")
+        print(" ERROR ...!!!! \n Enter Valid Input \n")
 
 
 def Win(User, Computer):
