@@ -8,37 +8,16 @@ def Rock_Paper_Scissors():
     
         print('it is draw')
     
-    elif user == 'r':
-    
-        if computer == 'p':
-        
-            print('YOU LOST')
-        
-        else:
-        
-            print('You Won')
-        
-    
-    elif user == 'p':
-    
-        if computer == 's':
-        
-            print('YOU LOST')
-        
-        else:
-        
-            print('YOU WIN')
-        
-    
+    elif Win(user,computer):
+        print("YOU WIN")
     else:
-    
-        if computer == 'r':
-        
-            print('YOU LOST')
-        
-        else:
-        
-            print('YOU WIN')
-        
+        print("YOU LOST")
+
+
+def Win(User, Computer):
+    if((User == 'r' and Computer == 's') or (User == 'p' and Computer == 'r') or (User == 's' and Computer == 'p')):
+        return True
+    return False
+
 if __name__ == "__main__":
     Rock_Paper_Scissors()
